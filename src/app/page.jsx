@@ -33,7 +33,7 @@ export default function Home() {
 
         {/* Title */}
         <h1
-          className={`${playfair.className} text-5xl md:text-5xl font-extrabold text-black mt-8 tracking-wide`}
+          className={`${playfair.className} text-4xl md:text-5xl font-extrabold text-black mt-8 tracking-wide`}
         >
           THANDAPRA
         </h1>
