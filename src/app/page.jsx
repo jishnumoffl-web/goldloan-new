@@ -5,12 +5,9 @@ const playfair = Playfair_Display({
   weight: ["600", "700", "800"],
 });
 
-
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F9C846] flex flex-col items-center justify-between relative overflow-hidden px-4">
-
       {/* Top Bar */}
       <div className="w-full max-w-7xl flex justify-between items-center pt-6">
         <span className="flex items-center gap-2 text-sm font-medium text-black">
@@ -27,29 +24,24 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center mt-20">
-
         {/* Logo */}
         <div className="w-35 h-35 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-gray-200">
           <div className="text-3xl font-extrabold">
-            <img
-              src="/images/logo.png"
-              className="img-fluid rounded-top"
-              alt="logo"
-            />
-            
+            <img src="/images/logo.png" className="img-fluid " alt="logo" />
           </div>
         </div>
 
-        
         {/* Title */}
-        <h1           className={`${playfair.className} text-4xl md:text-6xl font-extrabold text-black mt-8 tracking-wide`}
->
+        <h1
+          className={`${playfair.className} text-5xl md:text-5xl font-extrabold text-black mt-8 tracking-wide`}
+        >
           THANDAPRA
         </h1>
 
         <p className="text-lg md:text-xl tracking-widest mt-2 text-black/80">
           GOLD LOAN & FINANCE
         </p>
+        <p className="text-black">Kollakadavu | Puthencavu</p>
 
         {/* Coming Soon Badge */}
         <div className="mt-8 bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
@@ -59,8 +51,9 @@ export default function Home() {
 
         {/* Description */}
         <p className="max-w-2xl mt-10 text-gray-800 text-sm md:text-base leading-relaxed">
-          We are preparing something extraordinary for you.  
-          Our trusted gold loan and finance services are getting a digital makeover to serve you better.
+          We are preparing something extraordinary for you. Our trusted gold
+          loan and finance services are getting a digital makeover to serve you
+          better.
         </p>
 
         {/* Email Input */}
@@ -88,7 +81,7 @@ export default function Home() {
               📞
             </div>
             <p className="text-sm text-gray-600">Phone</p>
-            <p className="font-bold  text-black">8714 742 635</p>
+            <p className="font-bold  text-black">+91 8714742635</p>
           </div>
 
           <div>
@@ -118,8 +111,6 @@ export default function Home() {
       </footer>
 
       {/* Decorative Dots */}
-     
-
     </main>
   );
 }
