@@ -1,3 +1,12 @@
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+});
+
+
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F9C846] flex flex-col items-center justify-between relative overflow-hidden px-4">
@@ -36,7 +45,8 @@ export default function Home() {
         </p>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-extrabold text-black mt-8 tracking-wide">
+        <h1           className={`${playfair.className} text-4xl md:text-6xl font-extrabold text-black mt-8 tracking-wide`}
+>
           THANDAPRA
         </h1>
 
@@ -71,7 +81,7 @@ export default function Home() {
 
       {/* Contact Card */}
       <section className="w-full max-w-5xl bg-[#FFF4D6] rounded-3xl shadow-xl px-8 py-10 mt-20">
-        <h2 className="text-center text-2xl font-bold mb-10">
+        <h2 className="text-center text-2xl text-black font-bold mb-10">
           Contact Us
         </h2>
 
@@ -111,9 +121,7 @@ export default function Home() {
       </footer>
 
       {/* Decorative Dots */}
-      <div className="absolute top-40 left-20 w-3 h-3 bg-white/40 rounded-full"></div>
-      <div className="absolute top-64 right-24 w-4 h-4 bg-white/30 rounded-full"></div>
-      <div className="absolute bottom-40 left-32 w-3 h-3 bg-white/30 rounded-full"></div>
+     
 
     </main>
   );
