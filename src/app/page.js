@@ -29,7 +29,7 @@ export default function Home() {
       <section className="flex flex-col items-center text-center mt-20">
 
         {/* Logo */}
-        <div className="w-28 h-28 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-gray-200">
+        <div className="w-35 h-35 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-gray-200">
           <div className="text-3xl font-extrabold">
             <img
               src="/images/logo.png"
@@ -40,10 +40,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="text-xs tracking-widest mt-2 text-gray-600">
-          SHERLYN GROUP · ESTD 1989
-        </p>
-
+        
         {/* Title */}
         <h1           className={`${playfair.className} text-4xl md:text-6xl font-extrabold text-black mt-8 tracking-wide`}
 >
